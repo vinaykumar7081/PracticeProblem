@@ -4,14 +4,10 @@ class Program
 {
     public static void Main(String[] args)
     {
-       DateTime myDate=DateTime.Now;
-        Console.WriteLine(myDate.AddDays(10));
-        Console.WriteLine(myDate.AddDays(-10));
-        Console.WriteLine(myDate.AddYears(10));
-        Console.WriteLine(myDate.AddTicks(10));
-        Console.WriteLine(myDate.AddSeconds (1000));
-        Console.WriteLine(myDate.ToOADate());
-
+        DateTime myDate = DateTime.Now;
+        string formattedDate = string.Format("Date is {0:yyyy MM dddd HH mm ss tt}", myDate);
+        Console.WriteLine(formattedDate);
+        //o/p: Date is 2022 04 Saturday 17 46 46
     }
 }
 
